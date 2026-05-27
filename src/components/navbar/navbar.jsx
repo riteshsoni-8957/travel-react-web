@@ -6,16 +6,16 @@ import { IoIosCloseCircle } from "react-icons/io";
 import { PiDotsNineBold } from "react-icons/pi";
 
 
-let navbar = document.querySelector('.navBar');
-function showNavBar() {
-  navbar.style.top = "90px";
-}
-
-function hideNavBar() {
-  navbar.style.top = "-1000px";
-}
-
 function NavBar() {
+  function showNavBar() {
+    document.querySelector('.navBar').style.top = "90px";
+  }
+
+  function hideNavBar() {
+    document.querySelector('.navBar').style.top = "-1000px";
+  }
+
+
   return (
     <section className="navBarSection flex">
       <header className="header flex">
@@ -45,15 +45,7 @@ function NavBar() {
             <li className="navItem">
               <a href="#" className="navLink">About</a>
             </li>
-
-            <li className="navItem">
-              <a href="#" className="navLink">Pages</a>
-            </li>
-
-            <li className="navItem">
-              <a href="#" className="navLink">News</a>
-            </li>
-
+            
             <li className="navItem">
               <a href="#" className="navLink">Contact</a>
             </li>

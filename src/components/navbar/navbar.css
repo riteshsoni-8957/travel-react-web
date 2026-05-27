@@ -48,7 +48,7 @@
 
     .navLink{
         color: var(--textColor);
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .navLink:hover{
@@ -119,6 +119,29 @@
 @media screen and (min-width: 450px) {
     .header{
         padding: 10px 30px !important;
+
+        .navBar{
+            .navLists{
+                .navItem{
+                    .navLink{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 560px) {
+    .navBar{
+        .navLists{
+            .navItem{
+                .navLink{
+                    font-size: 26px;
+                }
+            }
+        }
     }
 }
 
