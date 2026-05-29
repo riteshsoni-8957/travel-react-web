@@ -1,5 +1,6 @@
 // import React from 'react'
 import './main.css'
+import {Link} from 'react-router-dom'
 
 // imports data file
 import Data from './data'
@@ -49,10 +50,12 @@ function Main() {
                   </div>
 
                   <div className="detailsBtn">
-                    <button className='btn flex'>
-                      Details
-                      <GrNotes className="icon"/>
-                    </button>
+                    <Link to={`/destination-details/${id}`}>
+                      <button className='btn flex'>
+                        Details
+                        <GrNotes className="icon"/>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
