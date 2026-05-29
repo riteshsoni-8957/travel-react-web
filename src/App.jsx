@@ -18,9 +18,11 @@ function App() {
   return (
     <>
       <HashRouter>
-        <NavBar/>   // har page pe dikhega
+        {/* har page pe dikhega */}
+        <NavBar/>   
 
-          <Routes>    // first page pe dikhega
+          {/* first page pe dikhega */}
+          <Routes>   
             <Route path="/" 
             element={
               <>
@@ -29,11 +31,13 @@ function App() {
               </> 
             } 
           />
-          
-          <Route path="/destination-details/:id" element={<DestinationDestils/>} />    // main page ke details pe click karne pe dikhega
+
+          {/* main page ke details pe click karne pe dikhega */}
+          <Route path="/destination-details/:id" element={<DestinationDestils/>} />     
         </Routes>
 
-        <Footer/>    // har page pe dikhega
+            {/* har page pe dikhega */}
+        <Footer/>    
       </HashRouter>
     </>
   )
